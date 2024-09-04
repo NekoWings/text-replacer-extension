@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Replacer</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      #patternList {
+        margin-top: 20px;
+      }
+      .pattern-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        align-items: center;
+      }
+      .dismiss-btn {
+        cursor: pointer;
+        color: red;
+        font-size: 18px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h2>Set Replace Pattern</h2>
+    <input type="text" id="originalText" placeholder="Original text" />
+    <input type="text" id="replacementText" placeholder="Replacement text" />
+    <button id="saveButton">Save</button>
+    <div id="patternList">
+      <h3>Current Patterns:</h3>
+      <ul id="patterns"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
